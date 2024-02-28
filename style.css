@@ -1,0 +1,134 @@
+body {
+    background-color: #0d0d0d;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* .container{
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+
+.banner-img {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.search-img-1 {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    
+}
+
+.inria-sans {
+    font-family: "Inria Sans", sans-serif;
+    font-style: normal;
+}
+
+.car-active-btn{
+    background: #F95927 !important;
+}
+
+.car__bg::before{
+    content: '';
+    position:absolute;
+    height: 100%;
+    width: 90%;
+    background: url('/images/search-img-1.png');
+    z-index: -1;
+    text-align: center;
+    border-radius: 24px;
+}
+
+/* ================================================================= */
+                    /*  Responsive design  */
+/* ================================================================== */
+
+/* small phones */
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    body {
+      background-color: #0d0d0d;
+      width: 100% ;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 10px;
+    }
+  }
+
+/* phone  */
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+    body {
+      background-color: #0d0d0d;
+      width: 100% ;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 20px ;
+    }
+  }
+
+/* tablet  */
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+    body {
+      background-color: #0d0d0d;
+      width: 100% ;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .container{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0px 30px ;
+  }
+  }
+
+/* laptop  */
+@media only screen and (min-width: 992px) and (max-width: 1278px) {
+    body {
+      background-color: #0d0d0d;
+      width: 100% ;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .container{
+        width: 100%;
+        margin-left: 0px auto;
+        margin-right: 0px auto;
+        padding: 0px 50px;
+        
+    }
+  }
+  
+/* desktop  */
+@media screen and (min-width: 1280px) {
+    body{
+        background-color: #0d0d0d;
+        width: 100% ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 60px;
+        
+    }
+    
+}  

@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+    <!-- ----------------------------Tailwind CSS CDN ----------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ----------------------------Tailwind CSS CDN ----------------------------- -->
+
+    <!-- --------------------------------Font Awesome----------------------------------- -->
+    <script src="https://kit.fontawesome.com/66732c8dcb.js" crossorigin="anonymous"></script>
+    <!-- --------------------------------Font Awesome----------------------------------- -->
+
+    <!-- ------------------------------------Google Fonts---------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <!-- ------------------------------------Google Fonts---------------------------------------- -->
+
+    <!-- -----------------------------------------AOS Theme-------------------------------------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- -----------------------------------------AOS Theme-------------------------------------- -->
+
+    <!-------------------------------------- slick slider ------------------------------------------ -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-------------------------------------- slick slider ------------------------------------------ -->
+
+
+
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <!-- ===========================================================================
+                             Header Tag starts here 
+    ============================================================================= -->
+    <header>
+        <!-- -------------------------------------------------------
+                            Navbar section starts here 
+        ------------------------------------------------------- -->
+        <section class="bg-[#333333]">
+            <div
+                class="container mx-auto md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+                <div class="navbar p-0 lg:p-[10px] xl:p-[16px]">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-[#FFF]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#333333] rounded-box w-52">
+                                <li
+                                    class="rounded-[200px] px-[14px] py-[6px] text-[#FFFFFF] cursor-pointer hover:bg-[#333333] hover:text-[#F95927] duration-300">
+                                    <a>Home</a>
+                                </li>
+                                <li
+                                    class="rounded-[200px] px-[14px] py-[6px] text-[#FFFFFF] cursor-pointer hover:bg-[#333333] hover:text-[#F95927] duration-300">
+                                    <a>About us</a>
+                                </li>
+                                <li
+                                    class="rounded-[200px] px-[14px] py-[6px] text-[#FFFFFF] cursor-pointer hover:bg-[#333333] hover:text-[#F95927] duration-300">
+                                    <a>Shop</a>
+                                </li>
+                                <li
+                                    class="rounded-[200px] px-[14px] py-[6px] text-[#FFFFFF] cursor-pointer hover:bg-[#333333] hover:text-[#F95927] duration-300">
+                                    <a>Vehicles</a>
+                                </li>
+                                <li
+                                    class="rounded-[200px] px-[14px] py-[6px] text-[#FFFFFF] cursor-pointer hover:bg-[#333333] hover:text-[#F95927] duration-300">
+                                    <a>Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./images/Logo.png" alt="logo_img" class="w-[120px] md:w-[150px] lg:w-[150px]">
+                    </div>
+                    <div
+                        class="navbar-center hidden py-1 lg:flex pl-[8px] pr-[8px] py-[4px] bg-[#0D0D0D] rounded-[200px]">
+                        <ul class="flex gap-[32px] p-2">
+                            <li class="rounded-[200px] px-[14px] py-[6px] cursor-pointer bg-[#333333] text-[#F95927]  ">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li
+                                class="rounded-[200px] px-[14px] py-[6px] text-[#FFFFFF] cursor-pointer hover:bg-[#333333] hover:text-[#F95927]">
+                                <a href="#about">About us</a>
+                            </li>
+                            <li
+                                class="rounded-[200px] px-[14px] py-[6px] text-[#FFFFFF] cursor-pointer hover:bg-[#333333] hover:text-[#F95927]">
+                                <a href="#shop">Shop</a>
+                            </li>
+                            <li
+                                class="rounded-[200px] px-[14px] py-[6px] text-[#FFFFFF] cursor-pointer hover:bg-[#333333] hover:text-[#F95927]">
+                                <a href="#vehicles">Vehicles</a>
+                            </li>
+                            <li
+                                class="rounded-[200px] px-[14px] py-[6px] text-[#FFFFFF] cursor-pointer hover:bg-[#333333] hover:text-[#F95927]">
+                                <a href="#blog">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end gap-[16px] lg:gap-[30px]">
+                        <p><i
+                                class="fa-solid fa-magnifying-glass text-[16px]  text-[#FFFFFF] lg:text-[24px] hover:text-[#F95927] cursor-pointer duration-300"></i>
+                        </p>
+                        <p><i
+                                class="fa-solid fa-list text-[16px]  text-[#FFFFFF] lg:text-[24px] hover:text-[#F95927] cursor-pointer duration-300"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------------------------------------------
+                            Navbar section ends here 
+        ------------------------------------------------------- -->
+    </header>
+    <!-- ===========================================================================
+                             Header Tag ends here 
+    ============================================================================= -->
+
+
+
+    <!-- ===========================================================================
+                             MAIN Container starts here 
+    ============================================================================= -->
+    <main>
+
+        <!-- ===========================================================================
+                             Banner section starts here 
+    ============================================================================= -->
+        <section  class="banner-img h-[80vh] md:h-[85vh] lg:h-[90vh] xl:h-[100vh] 2xl:h-[100vh] flex justify-center items-center"
+            style="background: url(./images/banner_img_bg.png)">
+
+            <div class="container mx-auto md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+
+                <div data-aos="zoom-in-up" data-aos-duration="700" class="flex justify-between ">
+                    <div class="w-full md:w-full lg:w-1/2 xl:w-1/2 md:text-left">
+                        <h1
+                            class="text-[48px] lg:text-[64px] 2xl:text-[78px] font-[700] leading-[62px] lg:leading-[84px] text-[#FFFFFF] pb-[50px] lg:pb-[30px] inria-sans">
+                            Buy Your Dream <br />
+                            Car Here Easily <br />
+                            & Safely
+                        </h1>
+                        <h2
+                            class="text-[22px] lg:text-[22px] font-[400] leading-[24px] lg:leading-[30px] text-[#FFFFFFE5] pb-[50px] lg:pb-[70px]">
+                            Your Partner in Real Estate Success. Our <br class="hidden md:hidden lg:hidden"> mission is 
+                            to  help <br class="hidden md:hidden lg:block">
+                            you
+                            <br class="hidden lg:block xl:hidden" />
+                            find the perfect property <br class="hidden md:hidden lg:hidden"> or sell your current one
+                            with ease.
+                        </h2>
+                        <div class="text-center lg:text-start">
+                            <img src="./images/rating_img.png" alt="rating img" class="w-[240px] lg:w-[400px]">
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in-up" data-aos-duration="700"
+                        class="w-1/2 relative hidden md:block lg:block xl:block 2xl:block">
+                        <div
+                            class="box border rounded-lg md:w-[255px] lg:w-[400px] h-[400px] lg:h-[460px] bg-[#FFFFFF] text-[#808080] absolute z-[1] right-[0px]">
+                            <div class="p-5 md:space-y-[16px] lg:space-y-[24px] text-center">
+                                <select class="select w-full max-w-xs bg-[#F3F4F6] text-[#808080]">
+                                    <option>Select your Brand</option>
+                                </select>
+                                <select class="select w-full max-w-xs bg-[#F3F4F6] text-[#808080]">
+                                    <option>Select Modal</option>
+                                </select>
+                                <select class="select w-full max-w-xs bg-[#F3F4F6] text-[#808080]">
+                                    <option>Select Location</option>
+                                </select>
+                                <select class="select w-full max-w-xs bg-[#F3F4F6] text-[#808080]">
+                                    <option>Select Year</option>
+                                </select>
+                                <select class="select w-full max-w-xs bg-[#F3F4F6] text-[#808080]">
+                                    <option>Select Type of Care</option>
+                                </select>
+
+                                <button
+                                    class="md:px-[60px]  lg:px-[7rem] py-[12px] lg:py-4 mb-4 mt-[28px] text-[#FFFFFF] text-[16px] font-bold bg-[#F95927] leading-[16px] rounded-lg shadow cursor-pointer focus:ring-4 focus:ring-[#F95927] focus:ring-opacity-50 focus:outline-none duration-200">
+                                    Search Here
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ===========================================================================
+                             Banner section ends here 
+    ============================================================================= -->
+
+
+        <!-- ===========================================================================
+                             Client section starts here 
+    ============================================================================= -->
+        <section class="pt-[60px] lg:pt-[120px] relative overflow-hidden">
+
+            <div data-aos="fade-up" data-aos-duration="800"
+                class="container mx-auto md:container  lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+                <div
+                    class="flex justify-between gap-[20px] lg:gap-[0px] flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row">
+                    <h1
+                        class="text-[36px] lg:text-[48px] font-[700] tracking-[0.6px] leading-[36px] lg:leading-[52px] text-[#FFFFFF] inria-sans">
+                        What We Do
+                    </h1>
+                    <p class="text-[16px] lg:text-[20px] font-[400] leading-[20px] lg:leading-[28px] text-[#FFFFF5]">
+                        At our car shop, we specialize in bringing automotive dreams to
+                        life. From <br class="hidden lg:block" />
+                        expert repairs to curated selections, 'What We Do' revolves around
+                        delivering <br class="hidden lg:block" />
+                        unparalleled quality and satisfaction to every car enthusiast.
+                    </p>
+                </div>
+
+                <div class="flex justify-between">
+                    <div class="pt-[30px] lg:pt-[85px]">
+                        <h1 class="text-[30px] font-[400] leading-[30px] text-[#FFFFFFE5] inria-sans">
+                            Our Happy Customers
+                        </h1>
+                        <h2
+                            class="text-[60px] lg:text-[160px] font-[700] leading-[70px] lg:leading-[160px] text-[#F95927] pt-0 lg:pt-[20px] pb-[20px] lg:pb-[52px] inria-sans">
+                            8500+
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="800" class="bg-[#343434] pb-[60px] lg:pb-[120px]">
+                <div class="container mx-auto flex justify-between flex-col md:flex-row lg:flex-row ">
+                    <h1
+                        class="mt-[290px] md:mt-[500px] lg:mt-[100px] text-[36px] lg:text-[48px] font-[700] leading-[36px] lg:leading-[52px] text-[#FFFFFF] inria-sans">
+                        We Focus on All <br /> Our services</h1>
+                    <img src="./images/customer_img.png" alt="customers img"
+                        class="mt-[20px] absolute z-[11] top-[0px] right-[0px] md:mr-[0px] lg:mt-[-280px] mr-[0px] lg:mr-[-76px]" />
+                </div>
+
+                <div class="container mx-auto flex flex-col lg:flex-row gap-[15px] md:gap-[30px] lg:gap-[80px] ">
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"
+                        class="border-none lg:border-t-[1px] mt-[20px] lg:mt-[80px] group">
+                        <h1
+                            class="text-[36px] lg:text-[48px] font-[700] leading-[44px] group-hover:text-[#F95927] duration-300 text-[#FFFFFFCC] mb-[14px] lg:mb-[28px] mt-[16px] lg:mt-[32px] group inria-sans">
+                            01
+                        </h1>
+                        <h2
+                            class="text-[36px] lg:text-[48px] font-[700] leading-[40px] mb-[16px] text-[#FFFFFF] inria-sans">
+                            Highly Secured
+                        </h2>
+                        <p
+                            class="text-[16px] lg:text-[20px] font-[400] leading-[18px] lg:leading-[22px] text-[#FFFFFFCC]">
+                            Ensuring top-tier security, our system employs advanced
+                            encryption and multi-factor authentication, guaranteeing highly
+                            secured protection for your sensitive data.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"
+                        class="border-none lg:border-t-[1px] mt-[20px] lg:mt-[80px] group">
+                        <h1
+                            class="text-[36px] lg:text-[48px] font-[700] leading-[44px] text-[#FFFFFF] group-hover:text-[#F95927] duration-300 mb-[14px] lg:mb-[28px] mt-[16px] lg:mt-[32px] inria-sans">
+                            02
+                        </h1>
+                        <h2
+                            class="text-[36px] lg:text-[48px] font-[700] leading-[40px] mb-[16px] text-[#FFFFFF] inria-sans">
+                            Trusted Agents
+                        </h2>
+                        <p
+                            class="text-[16px] lg:text-[20px] font-[400] leading-[18px] lg:leading-[22px] text-[#FFFFFFCC]">
+                            Trusted Agents, your reliable partner in automotive excellence.
+                            Experience top-notch service and quality vehicles for a seamless
+                            journey ahead.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"
+                        class="border-none lg:border-t-[1px] mt-[20px] lg:mt-[80px] group">
+                        <h1
+                            class="text-[36px] lg:text-[48px] font-[700] leading-[44px] text-[#FFFFFFCC] group-hover:text-[#F95927] duration-300 mb-[14px] lg:mb-[28px] mt-[16px] lg:mt-[32px] inria-sans">
+                            03
+                        </h1>
+                        <h2
+                            class="text-[36px] lg:text-[48px] font-[700] leading-[40px] mb-[16px] text-[#FFFFFF] inria-sans">
+                            Free Support
+                        </h2>
+                        <p
+                            class="text-[16px] lg:text-[20px] font-[400] leading-[18px] lg:leading-[22px] text-[#FFFFFFCC]">
+                            At our car shop, enjoy peace of mind with our "Free Support"
+                            service. We prioritize customer satisfaction, offering expert
+                            assistance for worry-free driving experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ===========================================================================
+                             Client section ends here 
+    ============================================================================= -->
+
+
+
+        <!-- ===========================================================================
+                             Car Collection section starts here 
+    ============================================================================= -->
+        <Section class="pt-[60px] lg:pt-[120px] pb-[60px] lg:pb-[120px]">
+
+            <div
+                class="container mx-auto md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+                    <h1
+                        class="text-[32px] lg:text-[48px] font-[700] leading-[36px] lg:leading-[52px] text-[#FFFFFF] text-center pb-[40px] lg:pb-[64px] inria-sans">
+                        All-Terrain Adventures Await: Browse Our <br class="hidden lg:block" />
+                        Collection of Rugged Off-Road Vehicles.
+                    </h1>
+
+
+                    <div class="join pb-[48px] flex justify-center">
+                        <div class="join">
+                            <button onclick="test('all')"
+                                class="join-item btn car-buttons all-btn rounded-l-[200px] bg-[#343434] hover:bg-[#000] border-none  hover:text-[#FFF] duration-300 text-[#FFFFFF] car-active-btn">All</button>
+                            <button onclick="test('new')"
+                                class="join-item btn car-buttons new-btn bg-[#343434] hover:bg-[#000] hover:text-[#FFF] border-none duration-300 text-[#FFFFFF]">New</button>
+                            <button onclick="test('popular')"
+                                class="join-item btn car-buttons popular-btn bg-[#343434] hover:bg-[#000] hover:text-[#FFF] border-none duration-300 text-[#FFFFFF]">Popular</button>
+                            <button onclick="test('used')"
+                                class="join-item btn car-buttons used-btn bg-[#343434] rounded-r-[200px] hover:bg-[#000] hover:text-[#FFF] border-none duration-300 text-[#FFFFFF]">Used</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- -----------------Card Items-------------- -->
+                <div>
+                    <!-- All items  -->
+                    <div id="all"
+                        class=" car-items-container card grid gap-[12px] lg:gap-[24px] grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- 1st card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car1.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    SUV VT 5700
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $37,000</p>
+                            </div>
+                        </div>
+
+                        <!-- 2nd card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car2.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Mustang
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $25,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 3rd card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car3.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    SModel 3 compact sedan
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $1,67,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 4th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car4.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Huracan Sterrato
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $3,78,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 5th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car5.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Mercedes Benz Gas
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $3,500,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 6th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car6.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    VW Golf GTE 1.4 TSI eHybrid
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $3,500,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 7th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car7.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Nissan Fuga 370GT
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $25,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 8th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car8.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Toyota RAV4 G
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $26,200</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 9th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car9.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Toyota RAV4 Adventure
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $32,500</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 10th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car1.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Mitsubishi RVR 1.8G 4WD
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $40,300</p>
+                            </div>
+                        </div>
+
+
+                        <!--11th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car11.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Mercedes Benz Gas
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $5,14,500</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 12th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car12.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    VW Golf GTE 1.4 TSI eHybrid
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $2,10,300</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- New items  -->
+                    <div id="popular"
+                        class="hidden car-items-container card grid gap-[12px] lg:gap-[24px] grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- 1st card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car1.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    SUV VT 5700
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $37,000</p>
+                            </div>
+                        </div>
+
+                        <!-- 2nd card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car2.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Mustang
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $25,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 3rd card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car3.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    SModel 3 compact sedan
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $1,67,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 4th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car4.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Huracan Sterrato
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $3,78,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 5th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car5.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Mercedes Benz Gas
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $3,500,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 6th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car6.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    VW Golf GTE 1.4 TSI eHybrid
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $3,500,000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- popular items  -->
+                    <div id="new"
+                        class="hidden car-items-container card grid gap-[12px] lg:gap-[24px] grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+
+                        <!-- 7th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car7.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Nissan Fuga 370GT
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $25,000</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 8th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car8.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Toyota RAV4 G
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $26,200</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 9th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car9.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Toyota RAV4 Adventure
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $32,500</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 10th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car1.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Mitsubishi RVR 1.8G 4WD
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $40,300</p>
+                            </div>
+                        </div>
+
+
+                        <!--11th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car11.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    Mercedes Benz Gas
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $5,14,500</p>
+                            </div>
+                        </div>
+
+
+                        <!-- 12th card  -->
+                        <div
+                            class="card relative bg-[#343434] cursor-pointer rounded-lg overflow-hidden shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                            <img src="./images/CarCollections/car12.jpg" alt="car_img" class="w-full">
+                            <button
+                                class="z-11 absolute left-[20px] top-[20px] px-[20px] py-[12px] bg-[#FFF] text-[#000] rounded-[100px] hidden lg:block">New
+                                Arrival</button>
+                            <div class="card_body p-[20px] lg:p-[24px] space-y-[12px] lg:space-y-[16px]">
+                                <div class="flex flex-col lg:flex-row gap-[4px] lg:gap-[28px] ">
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/electric.svg" alt="electric"
+                                            class="w-[12px] lg:w-[22px]" />Electric
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/speed-meter.svg" alt="meter img"
+                                            class="w-[12px] lg:w-[22px]" />110 Km
+                                    </p>
+                                    <p class="flex items-center gap-[6px] text-[14px] lg:text-[22px] text-[#FFFFFFCC]">
+                                        <img src="./icons/automatic.svg" alt="automatic img"
+                                            class="w-[12px] lg:w-[22px]" />Automatic
+                                    </p>
+                                </div>
+                                <h1
+                                    class="card_title text-[18px] lg:text-[24px] font-[700] leading-[20px] lg:leading-[24px] text-[#FFFFFF]">
+                                    VW Golf GTE 1.4 TSI eHybrid
+                                </h1>
+                                <p
+                                    class="card_price text-[22px] lg:text-[28px] font-[700] leading-[24px] lg:leading-[28px] text-[#F95927]">
+                                    $2,10,300</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- -----------------Card Items-------------- -->
+            </div>
+
+        </Section>
+        <!-- ===========================================================================
+                             Car Collection section ends here 
+    ============================================================================= -->
+
+
+
+        <!-- ===========================================================================
+                             Business section starts here 
+    ============================================================================= -->
+        <section class="bg-[#343434] p-[30px] lg:p-[80px]">
+            <div class="container mx-auto md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+                <div data-aos="fade-up"  class="pb-[40px] lg:pb-[100px]">
+                    <h1 class="text-[32px] lg:text-[48px] font-[700] leading-[36px] lg:leading-[52px] text-[#FFFFFF] text-center">
+                        Business Partners
+                    </h1>
+                </div>
+
+                <div class="flex slider-slick">
+                    <div>
+                        <img src="./images/brandPartner/blackSmith.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/bookmyshow.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/chicago-orange.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/foster.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/greenville.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/grubhub.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/holcim.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/ohio.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/sawmill.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/spotify.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/servicenow.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+                    <div>
+                        <img src="./images/brandPartner/westin.png" alt="" class="w-[60px] lg:w-[190px] m-auto">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- ===========================================================================
+                             Business section starts here 
+    ============================================================================= -->
+
+
+
+        <!-- ===========================================================================
+                             Contact section starts here 
+    ============================================================================= -->
+        <section class="mt-[60px] lg:mt-[120px] pb-[60px] lg:pb-[120px] bg-[#0D0D0D]">
+            <div
+                class="container mx-auto md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+                <div class="flex flex-col flex-col md:flex-row lg:flex-row gap-[20px] md:gap-[100px] lg:gap-[120px] items-center">
+
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"  class="w-full lg:w-1/2">
+                        <img class="w-full ml-[0px] lg:ml-[-60px]" src="./images/contact-img.jpg" alt="contact-img" />
+                    </div>
+
+                    <div data-aos="fade-up"  data-aos-anchor-placement="top-bottom" class="w-full lg:w-1/2 pr-[30px]">
+                        <h1
+                            class="text-[32px] lg:text-[52px] font-[700] leading-[36px] lg:leading-[56px] text-[#FFFFFF] pb-[20px] lg:pb-[32px] inria-sans">
+                            About AutoCar Story
+                        </h1>
+                        <p
+                            class="text-[14px] lg:text-[22px] font-[400] leading-[18px] lg:leading-[32px] text-[#FFFFFFE5]">
+                            AutoCar is your gateway to an exceptional automotive experience.
+                            As a premier destination for car enthusiasts and buyers, we are
+                            committed to redefining how you shop for and interact with cars.
+                        </p> <br>
+                        <p
+                            class="text-[14px] lg:text-[22px] font-[400] leading-[18px] lg:leading-[32px] text-[#FFFFFFE5] pb-[20px] lg:pb-[56px]">
+                            Our mission is to provide a comprehensive platform that offers
+                            an array of services to meet all your automotive needs. Our
+                            commitment to excellence extends to our team of experts who are
+                            passionate about cars and dedicated to delivering top-tier
+                            service.
+                        </p>
+                        <div class="flex justify-center md:jsu lg:justify-start">
+                            <button
+                                class="flex flex-row items-center justify-center w-auto px-4 lg:px-8 py-3 lg:py-4 mb-0 lg:mb-4 text-[#FFFFFF] text-[14px] lg:text-[18px] font-bold bg-[#F95927] leading-[14px] lg:leading-[16px] capitalize duration-100 transform rounded-lg shadow cursor-pointer focus:ring-4 focus:ring-[#F95927] focus:ring-opacity-50 focus:outline-none  hover:shadow-lg hover:-translate-y-1">
+                                contact With Us
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===========================================================================
+                             Contact section ends here 
+    ============================================================================= -->
+
+
+
+
+        <!-- ===========================================================================
+                            Offer section starts here 
+    ============================================================================= -->
+        <section class="bg-[#343434] pt-[60px] pb-[60px] lg:pt-[120px] lg:pb-[120px]">
+
+            <div
+                class="container mx-auto md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800"
+                    class="pb-[32px] lg:pb-[64px] text-center">
+                    <h1
+                        class="text-[30px] lg:text-[48px] font-[700] leading-[26px] lg:leading-[52px] text-[#FFFFFF] pb-[10px] lg:pb-[16px] inria-sans">
+                        Latest Offers</h1>
+                    <p class="text-[14px] lg:text-[18px] font[400] leading-[18px] lg:leading-[25px] text-[#FFFFFFE5]">
+                        Discover unbeatable deals on our
+                        latest models! Elevate your <br> driving experience with exclusive offers today.</p>
+                </div>
+
+                <!-- Card Items  -->
+                <div class="flex justify-between gap-[16px] lg:gap-[32px] flex-col md:flex-row lg:flex-row">
+
+                    <div class="w-full lg:w-[60%]">
+                        <!-- 1st card  -->
+                        <div class=" relative overflow-hidden border border-[#FFFFFF] rounded-xl cursor-pointer">
+                            <div class="absolute inset-0"></div>
+                            <div class="group relative rounded-xl shadow-xl ring-gray-900/5">
+                                <div
+                                    class="z-10  overflow-hidden border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-80">
+                                    <img src="./images/offer-img-1.png"
+                                        class="animate-fade-in w-full scale-100 transform object-cover opacity-100 transition duration-300 group-hover:scale-110"
+                                        alt="" />
+                                </div>
+                                <div
+                                    class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+                                    <h1
+                                        class="text-[16px] lg:text-2xl font-bold text-white shadow-sm lg:shadow-xl inria-sans">
+                                        <span
+                                            class="text-[#F95927] text-[20px] lg:text-[36px] font-[700] leading-[18px] lg:leading-[43px]">$350</span>/month
+                                    </h1>
+                                    <h1
+                                        class="text-[14px] lg:text-[28px] font-[400] text-[#FFFFFFE0] shadow-sm lg:shadow-xl leading-[18px] lg:leading-[34px]">
+                                        Toyota Prius </h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2nd card & 3rd card -->
+                        <div class="flex justify-between pt-[16px] lg:pt-[32px] gap-[20px] lg:gap-[32px]">
+
+                            <div class=" relative overflow-hidden border border-[#FFFFFF] rounded-xl cursor-pointer">
+                                <div class="absolute inset-0"></div>
+                                <div class="group relative rounded-xl shadow-xl ring-gray-900/5">
+                                    <div
+                                        class="z-10  overflow-hidden border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+                                        <img src="./images/offer-img-3.png"
+                                            class="animate-fade-in w-[435px] h-[250px] scale-100 transform object-cover opacity-100 transition duration-300 group-hover:scale-110"
+                                            alt="" />
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+                                        <h1
+                                            class="text-[16px] lg:text-2xl font-bold text-white shadow-sm lg:shadow-xl inria-sans">
+                                            <span
+                                                class="text-[#F95927] text-[20px] lg:text-[36px] font-[700] leading-[18px] lg:leading-[43px]">$400</span>/month
+                                        </h1>
+                                        <h1
+                                            class="text-[14px] lg:text-[28px] font-[400] text-[#FFFFFFE0] shadow-sm lg:shadow-xl leading-[18px] lg:leading-[34px]">
+                                            Lamborghini Huracán </h1>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <div
+                                    class=" relative overflow-hidden border border-[#FFFFFF] rounded-xl cursor-pointer">
+                                    <div class="absolute inset-0"></div>
+                                    <div class="group relative rounded-xl shadow-xl ring-gray-900/5">
+                                        <div
+                                            class="z-10  overflow-hidden border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+                                            <img src="./images/offer-img-4.png"
+                                                class="animate-fade-in w-[435px] h-[250px] scale-100 transform object-cover opacity-100 transition duration-300 group-hover:scale-110"
+                                                alt="" />
+                                        </div>
+                                        <div
+                                            class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+                                            <h1
+                                                class="text-[16px] lg:text-2xl font-bold text-white shadow-sm lg:shadow-xl inria-sans">
+                                                <span
+                                                    class="text-[#F95927] text-[20px] lg:text-[36px] font-[700] leading-[18px] lg:leading-[43px]">$150</span>/month
+                                            </h1>
+                                            <h1
+                                                class="text-[14px] lg:text-[28px] font-[400] text-[#FFFFFFE0] shadow-sm lg:shadow-xl leading-[18px] lg:leading-[34px]">
+                                                Audi RS Q8</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4th card  -->
+                    <div class="w-full lg:w-[40%]">
+                        <div class=" relative overflow-hidden border border-[#FFFFFF] rounded-xl cursor-pointer">
+                            <div class="absolute inset-0"></div>
+                            <div class="group relative rounded-xl shadow-xl ring-gray-900/5">
+                                <div
+                                    class="z-10 overflow-hidden border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+                                    <img src="/images/offer-img-2.png"
+                                        class="animate-fade-in w-full scale-100 transform object-cover opacity-100 transition duration-300 group-hover:scale-110"
+                                        alt="" />
+                                </div>
+                                <div
+                                    class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+                                    <h1
+                                        class="text-[16px] lg:text-2xl font-bold text-white shadow-sm lg:shadow-xl inria-sans">
+                                        <span
+                                            class="text-[#F95927] text-[20px] lg:text-[36px] font-[700] leading-[18px] lg:leading-[43px]">$650</span>/month
+                                    </h1>
+                                    <h1
+                                        class="text-[14px] lg:text-[28px] font-[400] text-[#FFFFFFE0] shadow-sm lg:shadow-xl leading-[18px] lg:leading-[34px]">
+                                        Red Audi R8 2018</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ===========================================================================
+                            Offer section ends here 
+    ============================================================================= -->
+
+
+
+
+        <!-- ===========================================================================
+                            customers review section start here 
+    ============================================================================= -->
+        <section class="pb-[40px] lg:pb-[120px] pt-[60px] lg:pt-[120px]">
+            <div
+                class="container mx-auto md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+                <div
+                    class="flex justify-between gap-[30px] lg:gap-[80px] xl:gap-[220px] 2xl:gap-[100px] flex-col-reverse lg:flex-row">
+
+                    <div class="w-full lg:w-[55%]">
+                        <h1
+                            class="text-[32px] lg:text-[48px] font-[700] leading-[36px] lg:leading-[52px] text-[#FFFFFF] pb-[36px] lg:pb-[60px] xl:pb-[80px] tracking-[0.3px] inria-sans">
+                            Why People are
+                            Talking about us</h1>
+                        <h2
+                            class="text-[28px] lg:text-[36px] font-[600] leading-[30px] lg:leading-[40px] text-[#FFFFFF] pb-[16px] lg:pb-[30px] xl:pb-[40px] inria-sans">
+                            Wonderful
+                            Experience
+                            Provider</h2>
+                        <p
+                            class="text-[14px] lg:text-[20px] font-[400] leading-[20px] lg:leading-[30px] text-[#FFFFFF] pb-[48px]">
+                            Proactively target
+                            customer directed infrastructures via parallel e-business. Authoritatively coordinate
+                            superior potentialities through value-added content. Rapidiously visualize collaborative
+                            growth strategies before client-focused web services. <i
+                                class="fa-solid fa-arrow-right-long ml-[16px]"></i> <span
+                                class="text-[16px] lg:text-[20px] font-[600] leading-[20px] lg:leading-[25px]">Esther
+                                Howard</span></p>
+                        <img src="./images/people-img.png" alt="client-img-2" class="pb-[30px] w-1/2">
+                        <p
+                            class="text-[14px] lg:text-[20px] font-[400] text-[#F95927] hover:text-[#FFFFFF]  ease-in duration-300">
+                            See All Customer Feedback
+                            <i class="fa-solid fa-arrow-right-long ml-[16px]"></i>
+                        </p>
+                    </div>
+
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+                        class="w-[90%] md:w-[80%] self-center md:self-center lg:w-[75%] xl:w-[45%]">
+                        <img src="./images/people-img-2.png" alt="client-img-2" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===========================================================================
+                            customers review section ends here 
+    ============================================================================= -->
+
+
+        <!-- ===========================================================================
+                            Latest news section starts here 
+    ============================================================================= -->
+        <section>
+            <div
+                class="container mx-auto mt-[20px] lg:mt-[60px] pb-[60px] lg:pb-[120px] md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+                    <h1
+                        class="text-[36px] lg:text-[48px] font-[700] leading-[30px] lg:leading-[52px] text-[#FFFFFF] pb-[20px] text-center inria-sans">
+                        Latest news
+                    </h1>
+                    <p
+                        class="text-[16px] lg:text-[20px] font-[400] leading-[26px] lg:leading-[32px] text-[#FFFFFF] pb-[32px] lg:pb-[64px]  text-center">
+                        Revolutionary electric cars debut, reshaping the industry with cutting- <br
+                            class="hidden lg:block"> edge technology and sustainable innovation. Discover more
+                    </p>
+                </div>
+
+                <!-- card  -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[28px]">
+                    <div
+                        class="flex flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row gap-[28px] items-center p-[24px] group rounded-lg bg-[#343434]  items hover:bg-[#141212] ease-in duration-500 border border-[#141212] hover:border hover:border-[#F95927] cursor-pointer">
+                        <img src="./images/news-img1.png" alt="news_img"
+                            class="w-full h-[250px] md:h-auto lg:h-auto xl:h-auto 2xl:h-auto group-hover:-translate-y-1 group-hover:scale-90 group-hover:ease-leaner group-hover:ease-out group-hover:duration-500">
+                        <div>
+                            <button
+                                class="px-[20px] py-[10px] rounded-[200px] bg-[#494646] text-[#FFFFFFCC] text-[14px] font-[500] leading-[14px]">Car
+                                Safety</button>
+                            <h1
+                                class="pt-[8px] text-[#FFFFFF] text-[20px] lg:text-[24px] font-[700] leading-[22px] lg:leading-[28px] inria-sans">
+                                Features That Make The 2024 Chrysler Pacific A Family-Car
+                            </h1>
+                            <p
+                                class="pt-[16px] lg:pt-[24px] text-[#FFFFFFE5] text-[14px] lg:text-[16px] font-[400] leading-[20px] lg:leading-[26px]">
+                                He 2024 Chrysler Pacifica excels as a family car with spacious interiors, advanced
+                                safety
+                                tech, versatile seating, entertainment options...
+                            </p>
+                            <p
+                                class="pt-[14px] lg:pt-[20px] lg:pt-[40px] text-[#F95927] text-[14px] lg:text-[18px] font-[600] leading-[26px] hover:text-[#FFFFFF] ease-in duration-300 inria-sans">
+                                Read More</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row gap-[28px] items-center p-[24px] group rounded-lg bg-[#343434] hover:bg-[#141212] ease-in duration-500 border border-[#141212] hover:border hover:border-[#F95927] cursor-pointer">
+                        <img src="./images/news-img2.png" alt="news_img"
+                            class="w-full h-[250px] md:h-auto lg:h-auto xl:h-auto 2xl:h-auto group-hover:-translate-y-1 group-hover:scale-90 group-hover:ease-leaner group-hover:duration-500">
+                        <div>
+                            <button
+                                class="px-[20px] py-[10px] rounded-[200px] bg-[#494646] text-[#FFFFFFCC] text-[14px] font-[500] leading-[14px]">Car
+                                Safety</button>
+                            <h1
+                                class="pt-[8px] text-[#FFFFFF] text-[20px] lg:text-[24px] font-[700] leading-[22px] lg:leading-[28px] inria-sans">
+                                Avalon Hybrid Built For The Endless Weekend.
+                            </h1>
+                            <p
+                                class="pt-[16px] lg:pt-[24px] text-[#FFFFFFE5] text-[14px] lg:text-[16px] font-[400] leading-[20px] lg:leading-[26px]">
+                                Escape the routine with the Avalon Hybrid – meticulously crafted for the endless
+                                weekend. Unleash eco-friendly power, luxury...
+                            </p>
+                            <p
+                                class="pt-[14px] lg:pt-[20px] lg:pt-[40px] text-[#F95927] text-[14px] lg:text-[18px] font-[600] leading-[26px] hover:text-[#FFFFFF]  ease-in duration-300 inria-sans">
+                                Read More</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row gap-[28px] items-center p-[24px] group rounded-lg bg-[#343434] hover:bg-[#141212] ease-in duration-500 border border-[#141212] hover:border hover:border-[#F95927] cursor-pointer">
+                        <img src="./images/news-img3.png" alt="news_img"
+                            class="w-full h-[250px] md:h-auto lg:h-auto xl:h-auto 2xl:h-auto group-hover:-translate-y-1 group-hover:scale-90 group-hover:ease-leaner group-hover:duration-500">
+                        <div>
+                            <button
+                                class="px-[20px] py-[10px] rounded-[200px] bg-[#494646] text-[#FFFFFFCC] text-[14px] font-[500] leading-[14px]">Car
+                                Safety</button>
+                            <h1
+                                class="pt-[8px] text-[#FFFFFF] text-[20px] lg:text-[24px] font-[700] leading-[22px] lg:leading-[28px] inria-sans">
+                                The Future of Electric Vehicles: What You Need
+                            </h1>
+                            <p
+                                class="pt-[16px] lg:pt-[24px] text-[#FFFFFFE5] text-[14px] lg:text-[16px] font-[400] leading-[20px] lg:leading-[26px]">
+                                Dive into the future with electric vehicles—sleek, sustainable, and transforming the way
+                                we drive. Uncover the essentials for a greener...
+                            </p>
+                            <p
+                                class="pt-[14px] lg:pt-[20px] lg:pt-[40px] text-[#F95927] text-[14px] lg:text-[18px] font-[600] leading-[26px] hover:text-[#FFFFFF] ease-in duration-300 inria-sans">
+                                Read More</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row gap-[28px] items-center p-[24px] group rounded-lg bg-[#343434] hover:bg-[#141212] ease-in duration-500 border border-[#141212] hover:border hover:border-[#F95927] cursor-pointer">
+                        <img src="./images/news-img4.png" alt="news_img"
+                            class="w-full h-[250px] md:h-auto lg:h-auto xl:h-auto 2xl:h-auto group-hover:-translate-y-1 group-hover:scale-90 group-hover:ease-leaner group-hover:duration-500">
+                        <div>
+                            <button
+                                class="px-[20px] py-[10px] rounded-[200px] bg-[#494646] text-[#FFFFFFCC] text-[14px] font-[500] leading-[14px]">Car
+                                Safety</button>
+                            <h1
+                                class="pt-[8px] text-[#FFFFFF] text-[20px] lg:text-[24px] font-[700] leading-[22px] lg:leading-[28px] inria-sans">
+                                Are You Ready for the Online Dealership?
+                            </h1>
+                            <p
+                                class="pt-[16px] lg:pt-[24px] text-[#FFFFFFE5] text-[14px] lg:text-[16px] font-[400] leading-[20px] lg:leading-[26px]">
+                                Get geared up for the future of car shopping! Explore our online dealership for a
+                                seamless experience, unbeatable deals, and your dream...
+                            </p>
+                            <p
+                                class="pt-[14px] lg:pt-[20px] lg:pt-[40px] text-[#F95927] text-[14px] lg:text-[18px] font-[600] leading-[26px] hover:text-[#FFFFFF]  ease-in duration-300 inria-sans">
+                                Read More</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ===========================================================================
+                            Latest news section ends here 
+    ============================================================================= -->
+
+
+
+        <!-- ===========================================================================
+                            Search here section start here 
+    ============================================================================= -->
+        <section class="z-[1]">
+            <div class="container mx-auto md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+                <div class="search-img-1  flex justify-around lg:justify-start xl:justify-center car__bg relative mb-[-70px] z-[1] rounded-lg">
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+                        class="items-center justify-center self-center px-[30px] py-[12px] md:px-[40px] py-[14px] lg:px-0 lg:py-0 xl:px-0 xl:py-0">
+                        <h1
+                            class="text-[20px] lg:text-[48px] font-[700] leading-[20px] lg:leading-[48px]  text-[#FFFFFF] text-center lg:text-start">
+                            Start Your Car Search </h1>
+                        <p class="text-[16px] lg:text-[18px] font-[400] text-center lg:text-start leading-[20px] lg:leading-[26px] text-[#FFFFFFE5] pt-[10px] lg:pt-[16px]">
+                            Embarking on the journey to find your dream car is an exciting <br class="hidden lg:block">
+                            adventure, and it
+                            all
+                            begins when you start your car search today
+                        </p>
+                        <div class="flex justify-center lg:justify-start">
+                            <button
+                                class="flex flex-row  items-center justify-center lg:w-1/2 px-[24px] lg:PX-[1.5rem] xl:px-[5.5rem] py-[8px] xl:py-4 mb-4 mt-[16px] lg:mt-[28px] text-[#FFFFFF] text-[14px] lg:text-[20px] font-bold bg-[#F95927] leading-[16px] capitalize duration-100 transform rounded-lg shadow cursor-pointer focus:ring-4 focus:ring-[#F95927] focus:ring-opacity-50 focus:outline-none sm:mb-0 sm:w-auto sm:mr-4 md:pl-8 md:pr-6 xl:pl-12 xl:pr-10   hover:shadow-lg hover:-translate-y-1 inria-sans">
+                                Find Your Car 
+                            </button>
+                        </div>
+                    </div>
+
+                    <img data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" src="./images/search-img-2.png"
+                        alt="search-img-2"
+                        class="w-[46%] hidden md:hidden lg:block 2xl:block rounded-r-[24px] mr-[-112px]">
+
+                </div>
+            </div>
+        </section>
+        <!-- ===========================================================================
+                            Search here section ends here 
+    ============================================================================= -->
+
+    </main>
+    <!-- ===========================================================================
+                             MAIN Container starts here 
+    ============================================================================= -->
+
+
+
+    <!-- ===========================================================================
+                             Footer starts here 
+    ============================================================================= -->
+    <footer class=" bg-[#343434] pt-[110px] lg:pt-[150px] z-[-1]">
+        <div
+            class="flex flex-col gap-[20px] lg:flex-row lg:gap-[0px] justify-between text-base-content pb-[24px] lg:pb-[56px] container mx-auto md:container lg:container xl:container 2xl:container md:mx-auto lg:mx-auto xl:mx-auto 2xl:mx-auto">
+            <aside>
+                <div class="flex pb-[24px] gap-[8px] items-center">
+                    <img src="./images/favicon.png" alt="" class="w-[30px] lg:w-[40px]">
+                    <p
+                        class="text-[16px] lg:text-[22px] font-[700] leading-[22px] text-[#FFF] hover:text-[#F95927] duration-300">
+                        AutoCar</p>
+                </div>
+                <p
+                    class="text-[16px] lg:text-[18px] font-[400] leading-[20px] lg:leading-[22px] text-[#FFFFFF] pb-[20px]">
+                    Driven by passion, <span
+                        class="text-[20px] font-[600] hover:text-[#F95927] duration-300">AutoCar</span> is dedicated
+                    <br> to delivering top-notch vehicles and
+                    <br> exceptional service.
+                </p>
+
+                <div
+                    class="w-[320px] md:w-[320px] lg:w-[375px] xl:w-[420px] flex justify-between border bg-[#0D0D0D] bg-opacity-15 border-[#F9592997] py-[6px] lg:py-[10px] px-[8px] lg:px-[12px] rounded-lg">
+                    <input type="email" name="" id="" placeholder="Enter Your Email"
+                        class="bg-[#0D0D0D] bg-opacity-15 rounded-lg text-center">
+                    <button
+                        class="bg-[#F95927] px-[18px] lg:px-[40px] py-[8px] lg:py-[12px] text-[12px] lg:text-[18px] text-[#FFFFFF] duration-100 transform rounded-lg shadow cursor-pointer focus:ring-4 focus:ring-[#F95927] focus:ring-opacity-50 focus:outline-none hover:shadow-lg hover:bg-[#FFFFFFCC] hover:text-[#F95927] hover:duration-200">Subscribe</button>
+                </div>
+            </aside>
+            <nav class="flex flex-col gap-[8px] lg:gap-[24px]">
+                <h6 class="text-[#FFF] font-[600] hover:text-[#F95927] duration-300">About Us</h6>
+                <a class="link link-hover text-[#FFFFFFCC]">Home</a>
+                <a class="link link-hover text-[#FFFFFFCC]">About</a>
+                <a class="link link-hover text-[#FFFFFFCC]">Car Listing</a>
+                <a class="link link-hover text-[#FFFFFFCC] ">Talk to us</a>
+            </nav>
+            <nav class="flex flex-col gap-[8px] lg:gap-[24px]">
+                <h6 class="text-[#FFF] font-[600] hover:text-[#F95927] duration-300">Contact info</h6>
+                <a class="link link-hover text-[#FFFFFFCC]">455 West Orchard Street <br> Kings Mountain, NC 280867</a>
+                <a class="link link-hover text-[#FFFFFFCC]"><i class="fa-solid fa-phone mr-1"></i>+088 (246)
+                    642-27-10</a>
+                <a class="link link-hover text-[#FFFFFFCC]"><i class="fa-solid fa-envelope mr-1"></i>
+                    autocar@mail.com</a>
+            </nav>
+            <nav class="">
+                <h6 class="text-[#FFF] pb-[8px] font-[600] lg:pb-[24px] hover:text-[#F95927] duration-300">Our Gallery
+                </h6>
+                <div class="flex gap-[10px] ">
+                    <img src="./images/car-1.png" alt=""
+                        class="rounded shadow-lg transition-all duration-700 hover:scale-110 cursor-pointer w-[90px] md:w-[75px]">
+                    <img src="./images/car-2.png" alt=""
+                        class="rounded shadow-lg transition-all duration-700 hover:scale-110 cursor-pointer w-[90px] md:w-[75px]">
+                    <img src="./images/car-3.png" alt=""
+                        class="rounded shadow-lg transition-all duration-700 hover:scale-110 cursor-pointer w-[90px] md:w-[75px]">
+                </div>
+                <div class="flex gap-[10px] pt-[10px]">
+                    <img src="./images/car-4.png" alt=""
+                        class="rounded shadow-lg transition-all duration-700 hover:scale-110 cursor-pointer w-[90px] md:w-[75px]">
+                    <img src="./images/car-5.png" alt=""
+                        class="rounded shadow-lg transition-all duration-700 hover:scale-110 cursor-pointer w-[90px] md:w-[75px]">
+                    <img src="./images/car-6.png" alt=""
+                        class="rounded shadow-lg transition-all duration-700 hover:scale-110 cursor-pointer w-[90px] md:w-[75px]">
+                </div>
+            </nav>
+        </div>
+        <div class="border-t-[1px] border-[#FFFFFCCC] pt-[30px] lg:pt-[36px] pb-[20px] lg:pb-[30px]">
+            <p class="text-center text-[#FFFFFFCC]">© 2024 AutoCar All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- ===========================================================================
+                             Footer ends here 
+    ============================================================================= -->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./script.js"></script>
+
+
+    <!-- ===========================================================================
+                             Script.js starts here 
+    ============================================================================= -->
+    <script type="text/javascript">
+        
+        AOS.init({
+            duration: 700,
+            easing: 'ease-in-out-back',
+            startEvent: 'load',
+        });
+        AOS.refresh();
+
+
+
+        $(document).ready(function () {
+            $('.slider-slick').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+
+                ]
+            });
+        });
+    </script>
+
+
+    <!-- ===========================================================================
+                             Script.js ends here 
+    ============================================================================= -->
+</body>
+
+</html>
